@@ -1,13 +1,13 @@
 pipeline{
     agent any
     environment {
-        name = "Rakesh"
+        name = "RakeshReddy"
         course = "devops"
     }
     stages{
         stage("DevEnv"){
             environment {
-                GitHub_Credential = credentials('java-slave-user')
+                GitHub_Credential = credentials('node-slave-user-new')
             }
             steps{
                echo "My name is ${name}"
