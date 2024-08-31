@@ -1,20 +1,15 @@
 pipeline{
     agent any
+    environment {
+        name = "Rakesh"
+        course = "devops"
+    }
     stages{
         stage("DevEnv"){
             steps{
-               echo "DEV Env"
+               echo "My name is ${name}"
+               echo "enrolled course for ${course}"
             }
         }
-        stage("StageEnv"){
-            steps{
-               echo "Stage Env"
-            }
     }
-    stage("prodEnv"){
-            steps{
-               echo "prod Env"
-            }
-    }
-    }
-}
+}   
