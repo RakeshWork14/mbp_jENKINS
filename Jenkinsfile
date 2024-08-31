@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("DevEnv"){
             steps{
-               echo "DEV Env"
+               echo "DEV Environment"
             }
         }
         stage("StageEnv"){
