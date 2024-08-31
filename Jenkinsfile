@@ -7,13 +7,13 @@ pipeline{
     stages{
         stage("DevEnv"){
             environment {
-                GitHub_Credentials = credentials('java-slave-user')
+                GitHub_Credential = credentials('java-slave-user')
             }
             steps{
                echo "My name is ${name}"
                echo "enrolled course for ${course}"
-               echo "Username ${GitHub_Credentials_USR}"
-               echo "password ${GitHub_Credentials_PSW}"
+               echo "Username ${GitHub_Credential_USR}"
+               echo "password ${GitHub_Credential_PSW}"
             }
         }
     }
